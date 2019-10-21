@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/efrsb-web.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/efrsb-web.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/efrsb-web.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/efrsb-web.core.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/efrsb-web.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/efrsb-web.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/efrsb/efrsb-web.efrsb.iml" filepath="$PROJECT_DIR$/.idea/modules/efrsb/efrsb-web.efrsb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/efrsb/efrsb-web.efrsb.main.iml" filepath="$PROJECT_DIR$/.idea/modules/efrsb/efrsb-web.efrsb.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/efrsb/efrsb-web.efrsb.test.iml" filepath="$PROJECT_DIR$/.idea/modules/efrsb/efrsb-web.efrsb.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/efrsb-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/efrsb-web.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/remote/efrsb-web.remote.iml" filepath="$PROJECT_DIR$/.idea/modules/remote/efrsb-web.remote.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/remote/efrsb-web.remote.main.iml" filepath="$PROJECT_DIR$/.idea/modules/remote/efrsb-web.remote.main.iml" />

@@ -6,6 +6,8 @@
       <module name="core_test" target="1.8" />
       <module name="efrsb-web.core.main" target="1.8" />
       <module name="efrsb-web.core.test" target="1.8" />
+      <module name="efrsb-web.efrsb.main" target="1.8" />
+      <module name="efrsb-web.efrsb.test" target="1.8" />
       <module name="efrsb-web.main" target="1.8" />
       <module name="efrsb-web.remote.main" target="1.8" />
       <module name="efrsb-web.remote.test" target="1.8" />
