@@ -29,7 +29,8 @@ public class SessionHelper extends HelperBase {
 
   @Step("закрыть увемление о версиях поддерживаемых браузеров")
   public void closeStartNotification() {//закрыть увемл-е о прекращении поддержки старых браузеров
-    click(closeNotification);
+    actions.moveToElement(wd.findElement(closeNotification)).click().perform();
+//    click(closeNotification);
   }
 
   public void gotoReportList() {

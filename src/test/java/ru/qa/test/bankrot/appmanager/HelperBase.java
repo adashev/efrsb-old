@@ -150,7 +150,7 @@ public class HelperBase {
 
   @Step("выбрать сообщение {target}")
   public void selectMessageFromTheList(String target) throws InterruptedException {
-    click(By.cssSelector("img[title='Обзор']"));
+    /*click(By.cssSelector("img[title='Обзор']"));
     wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe")));
     if(wd.findElements(By.xpath(".//*[@id='tblResults']/tbody/tr[2]/td[1]")).size() > 0){
       click(By.xpath(".//*[@id='tblResults']/tbody/tr[2]/td[1]"));
@@ -158,7 +158,19 @@ public class HelperBase {
       wd.switchTo().defaultContent();
     } else {
       listIsEmpty(target);
+    }*/
+    click(By.cssSelector("img[title='Обзор']"));
+    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.cssSelector("iframe")));
+    Thread.sleep(100);
+    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//*[@id='tblResults']/tbody/tr[2]/td[1]")));
+    if(wd.findElements(By.xpath(".//*[@id='tblResults']/tbody/tr[2]/td[1]")).size() > 0){
+      click(By.xpath(".//*[@id='tblResults']/tbody/tr[2]/td[1]"));
+      Thread.sleep(300);
+      wd.switchTo().defaultContent();
+    } else {
+      listIsEmpty(target);
     }
+
   }
 
   public void listIsEmpty(String target){
