@@ -54,7 +54,7 @@ public class ApplicationManager {
     propertiesContour = new Properties();
   }
 
-  public void init() throws IOException {
+  public void init() throws IOException, InterruptedException {
     String target = System.getProperty("target", "local"); //6.10
     propertiesTarget.load(new FileReader(new File(String.format("config/targets/%s.properties", target))));
 
@@ -113,6 +113,9 @@ public class ApplicationManager {
     wd.manage().window().maximize();
     sessionHelper = new SessionHelper(wd, wait, actions);
     sessionHelper.openBaseUrl(propertiesContour.getProperty("baseUrl"));//baseUrl в IE должен быть вкл. в "Надежные сайты"
+    /*Thread.sleep(3000);
+    JavascriptExecutor js = (JavascriptExecutor) wd;
+    js.executeScript("document.body.style.zoom='1'");*/
     sessionHelper.login(propertiesUser.getProperty("login"), propertiesUser.getProperty("password"));
     sessionHelper.closeStartNotification();
   }

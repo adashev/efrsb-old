@@ -42,7 +42,7 @@ public class NewMessagePage extends HelperBase {
   }
 
   public void startCreateMessage() {
-//  gotoDirectoryDebtors(); // вызываем справочник должников
+//    gotoDirectoryDebtors(); // вызываем справочник должников
     selectLastDebtor("message"); // выбираем должника
     selectCourtCase("message"); // выбор Номера дела
     gotoDirectoryTypeMessage();// вызываем справочник типов сообщений. В справочнике мы сможем подсчитать группы сообщений и сообщений
@@ -58,9 +58,9 @@ public class NewMessagePage extends HelperBase {
 
   @Step("выбрать должника")
   public void selectDebtor() { //выбираем должника в открывшемся окне справочника
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[2]/tbody/tr[3]")));
-    wait.until((d) -> !wd.findElement(By.xpath("//table[2]/tbody/tr[3]/td[1]")).getText().equals(""));//ждем загрузки данных в таблицу
-    click(By.xpath("//table[2]/tbody/tr[3]/td[1]"));
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//table[2]/tbody/tr[2]")));
+    wait.until((d) -> !wd.findElement(By.xpath("//table[2]/tbody/tr[2]/td[1]")).getText().equals(""));//ждем загрузки данных в таблицу
+    click(By.xpath("//table[2]/tbody/tr[2]/td[1]"));
     wait.until((d) -> wd.switchTo().defaultContent());
   }
 
