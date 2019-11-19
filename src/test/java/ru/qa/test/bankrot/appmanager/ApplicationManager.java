@@ -108,14 +108,11 @@ public class ApplicationManager {
     } else {
       System.out.println("selenium-server not defined");
     }
-    wait = new WebDriverWait(wd, 14); // waitTime вместо константы в рамках 6.10
+    wait = new WebDriverWait(wd, 14);
     actions = new Actions(wd);
     wd.manage().window().maximize();
     sessionHelper = new SessionHelper(wd, wait, actions);
-    sessionHelper.openBaseUrl(propertiesContour.getProperty("baseUrl"));//baseUrl в IE должен быть вкл. в "Надежные сайты"
-    /*Thread.sleep(3000);
-    JavascriptExecutor js = (JavascriptExecutor) wd;
-    js.executeScript("document.body.style.zoom='1'");*/
+    sessionHelper.openBaseUrl(propertiesContour.getProperty("baseUrl"));
     sessionHelper.login(propertiesUser.getProperty("login"), propertiesUser.getProperty("password"));
     sessionHelper.closeStartNotification();
   }

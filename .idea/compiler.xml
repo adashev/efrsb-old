@@ -4,6 +4,16 @@
     <bytecodeTargetLevel>
       <module name="core_main" target="1.8" />
       <module name="core_test" target="1.8" />
+      <module name="efrsb-web-before_refact.core.main" target="1.8" />
+      <module name="efrsb-web-before_refact.core.test" target="1.8" />
+      <module name="efrsb-web-before_refact.efrsb.main" target="1.8" />
+      <module name="efrsb-web-before_refact.efrsb.test" target="1.8" />
+      <module name="efrsb-web-before_refact.main" target="1.8" />
+      <module name="efrsb-web-before_refact.remote.main" target="1.8" />
+      <module name="efrsb-web-before_refact.remote.test" target="1.8" />
+      <module name="efrsb-web-before_refact.test" target="1.8" />
+      <module name="efrsb-web-before_refact.testng.main" target="1.8" />
+      <module name="efrsb-web-before_refact.testng.test" target="1.8" />
       <module name="efrsb-web.core.main" target="1.8" />
       <module name="efrsb-web.core.test" target="1.8" />
       <module name="efrsb-web.efrsb.main" target="1.8" />
